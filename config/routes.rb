@@ -55,8 +55,9 @@ Rails.application.routes.draw do
   #   end
 
   root 'districts#home'
-
-
-
   
+  get 'addy' => 'districts#parse_address'
+  
+  resources :districts
+
 end

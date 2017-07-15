@@ -1,0 +1,340 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+.menu {
+    width: 100%;
+    height: 60px;
+    margin: 0px auto;
+    background-color: #ffffff;
+    padding: 0 0 0 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu li {
+	float: left;
+
+	
+}
+
+.menu img {
+    margin-top: .3%;
+
+    margin-left: 25%;
+
+
+}
+
+.menu ul {
+    height: auto;
+    padding: 1px 0px;
+    margin: 0 auto;
+}
+
+.menu li {
+    float: center;
+    display: inline;
+    padding: 0 15px 0 1px;
+    margin: 0 45px 0 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -o-transition: .8s;
+    -ms-transition: .8s;
+    -moz-transition: .8s;
+    -webkit-transition: .8s;
+    transition: .8s;
+}
+
+.header {
+    width: 100%;
+    height: 69px;
+    margin: 0px auto;
+    background-color: #2C3E50;
+    padding: 0 0 0 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.bg-image {
+	height: 650px;
+	width: 100%; 
+
+	
+}
+
+.bg-image-capitol {
+	background-image: url(http://www.iamthemodernman.biz/directdem/alt/directdemcapitolbuilding5.jpg);
+	opacity: 1;
+	/* lt ie8 */
+	-ms-background-position-x: center;
+	-ms-background-position-y: top;
+	/* default - may override with classes or media query */
+	background-position: center top;
+	/* scale bg image proportionately */
+	background-size: cover;
+	/* ie8 polyfill */
+	-ms-behavior: url(backgroundsize.min.htc);
+	/* prevent scaling past src width (or not) */
+	/* max-width: 1200px; */ }
+
+.bg-center-center {
+	-ms-background-position-x: center;
+	-ms-background-position-y: center;
+	background-position: center top; }
+
+
+.background {
+    height:0; 
+    padding-bottom:40%;
+    background-image: url(http://www.iamthemodernman.biz/directdem/alt/directdemcapitolbuilding7.jpg);
+    background-position: center bottom;
+	  /* scale bg image proportionately */
+	  background-size: cover; 
+}
+
+
+.bg-image h1 {
+
+    font-size: 57px;
+    color: #F8F8FF;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 135px;
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 100%;
+}
+
+.bg-image button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;    
+    position: absolute;
+    text-align: center;
+    top: 515px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    height: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    border-color: #009CDE;
+    border-bottom-color: #009CDE;
+    background-color: #009CDE;
+    transition: 0.25s;
+}
+
+
+.video {
+    height: 475px;
+    text-align: center;
+	
+}
+
+.question {
+    font-size: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.address {
+    height: 900px;
+    text-align: center;
+    background-color: #009CDE;
+	
+}
+
+.numbers {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    
+
+}
+
+.numbers h1 {
+    font-size: 35px;
+
+    
+}
+
+.numbers h2 {
+    padding-bottom: 20px;
+
+    
+}
+
+
+
+.icon {
+     vertical-align: middle;
+}
+
+#yellow {
+    color: #FAFF00;
+}
+
+.start {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.start h1 {
+    font-size: 35px;
+
+    
+}
+
+.border {
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    border: 8px solid #ffffff;
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+    
+}
+
+.form-control {
+    width:600px;
+    border-radius: 25px;
+    border: 2px #00B6D5;
+    padding: 12px 20px;
+    margin: 37px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;    
+    
+}
+
+
+
+
+.searchbutton {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;    
+    text-align: center;
+    top: 390px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    border-color: #ffffff;
+    border: 4px solid #ffffff;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #009CDE;
+
+}
+
+
+.footer {
+    background-color: #232528;
+    color: #EAF6FF;
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.districtcontainer {
+    background-color: #C1C1C1;
+}
+
+
+.district {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+
+    margin: auto;
+}
+
+.district h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    
+}
+
+.fixed-size-container {
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fixed-size {
+  width: 300px;
+  height: 500px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  line-height: 45px;
+  text-align: center;
+
+  margin-bottom: 20px;
+}

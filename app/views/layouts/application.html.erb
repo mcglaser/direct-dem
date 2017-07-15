@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Directdem</title>
+  <title>Direct Dem - Using Technology To Bring Direct Democracy To We The People</title>
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+
+<div class="menu">
+<ul>
+<a href="<%= root_url %>"><li id="logo"><img src="http://www.iamthemodernman.biz/directdem/alt/directdemlogowhite.png" alt="Direct Dem logo" height="59" width="264"></a></li>
+  
+               </ul>
+</div>
+
+
+
+
+
 <%= yield %>
 
+
+
+<div class="footer">
+    <h3>Copyright 2017 DirectDem.org</h3>
+    
+</div>
+
+
 </body>
+
+
+
+
+
+
+
+
+
+
 </html>
