@@ -19,6 +19,7 @@ class DistrictsController < ApplicationController
   
   def parse_address
     @street = params[:Street]
+    # IMPORTANT! Change api key to <%= ENV["MAPS_API_KEY"] %> and git ignore secrets.yml after getting new uncompromised api from Google
     response = HTTParty.get("https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyDAScfx_c-PTavuWMLSGRsWSQDTpCeW1Cg&address=#{@street}")
     @json = JSON.parse(response.body)
    
