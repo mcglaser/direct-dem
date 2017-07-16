@@ -20,6 +20,26 @@ time, mark, audio, video {
 }
 
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+
+
 .menu {
     width: 100%;
     height: 60px;
@@ -236,7 +256,7 @@ time, mark, audio, video {
     border-radius: 25px;
     border: 8px solid #ffffff;
     width: 1000px;
-    height: 300px;
+    height: 350px;
     margin: auto;
     
 }
@@ -280,17 +300,6 @@ time, mark, audio, video {
     border-radius: 7.5px;
     background-color: #009CDE;
 
-}
-
-
-.footer {
-    background-color: #232528;
-    color: #EAF6FF;
-    height: 40px;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .districtcontainer {
@@ -340,4 +349,25 @@ time, mark, audio, video {
     -moz-border-radius: 7.5px;
     -webkit-border-radius: 7.5px;
     border-radius: 7.5px; 
+}
+
+
+/**
+ * Footer 
+ */
+
+
+.footer {
+    background-color: #232528;
+    color: #EAF6FF;
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
 }
