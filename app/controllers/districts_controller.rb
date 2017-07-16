@@ -24,6 +24,10 @@ class DistrictsController < ApplicationController
     @json = JSON.parse(response.body)
    
 #Determines Congressional District 
+  if @json.key?("divisions") == false
+    redirect_to root_url
+  else
+
     @division_hash = @json.fetch("divisions")
     @ocd_division = @division_hash.keys[2] 
     @district_hash = @division_hash.fetch(@ocd_division)
@@ -138,6 +142,7 @@ class DistrictsController < ApplicationController
  #     @district
 
       redirect_to district_path(@district)
+    end
   
   end
   
