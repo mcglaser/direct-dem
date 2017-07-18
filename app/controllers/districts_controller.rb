@@ -11,6 +11,9 @@ class DistrictsController < ApplicationController
     @district = District.find(params[:id])
 
   end
+
+  def address
+  end
   
   
   
