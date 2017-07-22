@@ -2,7 +2,7 @@
 <div class="district"><h1><%= @district.district_name %></h1></div>
 
 <div class="fixed-size-container">
-  <div class="fixed-size">
+  <div class="fixed-size" id="<%= @district.senator_one_party.downcase %>">
 <h2>Senator <%= @district.senator_one_name %></h2>    
 <h2><img src="<%= @district.senator_one_photo_url %>" alt="Photo of <%= @district.senator_one_name %>" height="225" width="180"></h2>    
 <h2><%= @district.senator_one_party %> Party</h2>
@@ -12,7 +12,7 @@
   </div>
   
   
-  <div class="fixed-size">
+  <div class="fixed-size" id="<%= @district.senator_two_party.downcase %>">
 <h2>Senator <%= @district.senator_two_name %></h2>    
 <h2><img src="<%= @district.senator_two_photo_url %>" alt="Photo of <%= @district.senator_two_name %>" height="225" width="180"></h2>    
 <h2><%= @district.senator_two_party %> Party</h2>
@@ -23,7 +23,7 @@
 
 
 
-  <div class="fixed-size">
+  <div class="fixed-size" id="<%= @district.us_rep_party.downcase %>">
 <h2>Rep. <%= @district.us_rep_name %></h2>
 <h2><img src="<%= @district.us_rep_photo_url %>" alt="Photo of <%= @district.us_rep_name %>" height="225" width="180"></h2>
 <h2><%= @district.us_rep_party %> Party</h2>
