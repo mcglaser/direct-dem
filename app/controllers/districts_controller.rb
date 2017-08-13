@@ -149,7 +149,8 @@ class DistrictsController < ApplicationController
   
   end
   
-    
+  def bills
+  end  
   
   
   
