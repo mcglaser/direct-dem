@@ -152,6 +152,21 @@ class DistrictsController < ApplicationController
   def bills
     response = HTTParty.get("https://www.govtrack.us/api/v2/bill?congress=115&order_by=-current_status_date")
     @json = JSON.parse(response.body)
+
+
+
+    @objects_hash = @json.fetch("objects")
+ #   @bills = @objects_hash.fetch("")
+
+    @bills = []
+
+    @objects_hash.each do |h|
+
+      if h.has_value?("passed_bill") || h.has_value?("enacted_signed")  || h.has_value?("pass_over_senate")
+        @bills << h
+      end
+    end
+
   end  
   
   
