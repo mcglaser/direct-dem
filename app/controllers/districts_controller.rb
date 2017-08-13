@@ -150,6 +150,8 @@ class DistrictsController < ApplicationController
   end
   
   def bills
+    response = HTTParty.get("https://www.govtrack.us/api/v2/bill?congress=115&order_by=-current_status_date")
+    @json = JSON.parse(response.body)
   end  
   
   
