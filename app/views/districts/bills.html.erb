@@ -1,7 +1,13 @@
 
 
+<br><br>
+
+
 
 <% @bills.each do |bill| %>
     <% text_info = bill.fetch("text_info") %>
-	<h3><%= text_info.fetch("bill_name") %></h3><br><br>
+
+    <h3>Date: <%= Time.parse(bill.fetch("current_status_date")).strftime("%b %d, %Y") %>
+	<h3>Bill Name: <%= text_info.fetch("bill_name") %></h3>
+	<h3>Bill Status: <%= bill.fetch("current_status_label") %></h3><br><br>
 <% end %>
