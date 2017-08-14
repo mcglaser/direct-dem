@@ -1,1 +1,7 @@
-<h3><%= @bills %></h3>
+
+
+
+<% @bills.each do |bill| %>
+    <% text_info = bill.fetch("text_info") %>
+	<h3><%= text_info.fetch("bill_name") %></h3><br><br>
+<% end %>
