@@ -9,7 +9,7 @@
 
 
     <h3>Date: <%= Time.parse(bill.fetch("current_status_date")).strftime("%b %d, %Y") %>
-	<h3>Bill Name: <%= text_info.fetch("bill_name") %></h3>
+	<h3>Bill Name: <a href="<%= bill.fetch("link") %>" target="_blank" rel="noopener noreferrer"><%= text_info.fetch("bill_name") %></a></h3>
 	<h3>Link: <%= bill.fetch("link") %></h3>
 	<h3>Bill Status: <%= bill.fetch("current_status_label") %></h3><br><br>
 <% end %>
