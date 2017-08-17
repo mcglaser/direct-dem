@@ -3,13 +3,16 @@
 <br><br>
 
 
+<div class="bill-container">
 
 <% @bills.each do |bill| %>
     <% text_info = bill.fetch("text_info") %>
 
-
-    <h3>Date: <%= Time.parse(bill.fetch("current_status_date")).strftime("%b %d, %Y") %>
+	<div class="bill-info">
+    <h3>Date: <%= Time.parse(bill.fetch("current_status_date")).strftime("%b %d, %Y") %></h3>
 	<h3>Bill Name: <a href="<%= bill.fetch("link") %>" target="_blank" rel="noopener noreferrer"><%= text_info.fetch("bill_name") %></a></h3>
 	<h3>Link: <%= bill.fetch("link") %></h3>
 	<h3>Bill Status: <%= bill.fetch("current_status_label") %></h3><br><br>
+	</div>
 <% end %>
+</div>

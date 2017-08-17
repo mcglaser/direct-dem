@@ -381,7 +381,17 @@ body {
   color: #ffffff;    
 }
 
+.bill-container {
+  text-align: center;
+  margin-left: 33%;
+  margin-right: 33%;
 
+}
+
+.bill-info {
+  text-align: left;
+
+}
 
 
 /**
