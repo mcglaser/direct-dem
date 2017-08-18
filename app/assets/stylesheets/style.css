@@ -337,7 +337,7 @@ body {
 
 .fixed-size {
   width: 300px;
-  height: 480px;
+  height: 400px;
   background-color: #ffffff;
   color: #000000;
   font-weight: bold;
@@ -347,7 +347,7 @@ body {
 }
 
 .fixed-size a {
-    color: #ffffff;
+    color: #000000;
 }
 
 #republican {
@@ -379,6 +379,14 @@ body {
   border: 4px grey;
   background-color: grey;
   color: #ffffff;    
+}
+
+.social-links {
+    margin: 12px;
+}
+
+.social-links a {
+    padding: 8px;
 }
 
 .bill-header {
