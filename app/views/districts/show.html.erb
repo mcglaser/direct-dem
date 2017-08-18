@@ -34,8 +34,22 @@
 </div>
 
 </div>
+<div class="bill-header"><h1>Recent Legislation</h1></div>
+<div class="bill-container">
 
+<% @bills.each do |bill| %>
+    <% text_info = bill.fetch("text_info") %>
 
+	<div class="bill-info">
+    <h3><span id="bill-bold"><%= Time.parse(bill.fetch("current_status_date")).strftime("%b %d, %Y") %></span></h3><br>
+	<h3><span id="bill-bold">Bill Name:</span> <%= text_info.fetch("bill_name") %></h3><br>
+	<h3><span id="bill-bold">Link:</span> <a href="<%= bill.fetch("link") %>" target="_blank" rel="noopener noreferrer"><%= bill.fetch("link") %></a></h3><br>
+	<h3><span id="bill-bold">Bill Status:</span> <%= bill.fetch("current_status_label") %></h3>
+	</div>
+	<br><br><br><br>
+
+<% end %>
+</div>
 
 
 </center>

@@ -381,6 +381,15 @@ body {
   color: #ffffff;    
 }
 
+.bill-header {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .bill-container {
   text-align: center;
   margin-left: 33%;
