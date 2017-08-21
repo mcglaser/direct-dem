@@ -192,7 +192,7 @@ class DistrictsController < ApplicationController
 
 
     @objects_hash = @bill_json.fetch("objects")
- #   @bills = @objects_hash.fetch("")
+
 
     @bills = []
 
