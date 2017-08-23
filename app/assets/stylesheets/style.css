@@ -321,6 +321,11 @@ body {
     justify-content: center;
     align-items: center;
     color: #000000;
+    text-shadow: .5px 1px 1px grey;
+    letter-spacing: 10px;
+    font-size: 40px;
+    -webkit-text-stroke: 1px white;
+    margin-top: 0;
     
 }
 
@@ -396,6 +401,11 @@ body {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    text-shadow: .5px 1px 1px grey;
+    letter-spacing: 10px;
+    font-size: 30px;
+    -webkit-text-stroke: 1px white;
+
 }
 
 .bill-container {
